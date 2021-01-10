@@ -16,5 +16,5 @@ cmake ..
 ## Run
 ```bash
 clang-10 -S -emit-llvm -B test/gold/ld -flto -fsanitize=cfi-icall test/cfi_icall.c -o test/cfi_icall.ll
-opt -load build/hello/LLVMHelloWorld.so -helloworld test/cfi_icall.ll 
+opt-10 -load build/hello/LLVMHelloWorld.so -helloworld test/cfi_icall.ll 
 ```
