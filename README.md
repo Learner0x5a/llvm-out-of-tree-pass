@@ -11,6 +11,7 @@ Tested with clang-10
 mkdir build
 cd build
 cmake ..
+make -j8
 ```
 
 ## Run
